@@ -74,16 +74,15 @@ nav a:hover{
 
 /* ===== CARD ===== */
 .card{
-    background:white;
-    max-width:900px;
-    margin:auto;
-    padding:30px;
-    border-radius:14px;
-    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+  background:white;
+  padding:25px;
+  border-radius:15px;
+  text-align:left;
+  text-decoration:none;
+  color:#333;
+  box-shadow:0 10px 25px rgba(0,0,0,.08);
+  transition:.3s;
 
-    text-align:left;
-    line-height:1.8;
-    font-size:16px;
 }
 
 /* HEADINGS */
@@ -195,5 +194,6 @@ footer{
 .content{
   flex:1;
 }
+
 
 
