@@ -23,16 +23,80 @@
 <header><h1>Pertemuan 2 – HTML Dasar</h1></header>
 
 <main class="materi">
-<h2>Apa itu HTML?</h2>
-<p>HTML (HyperText Markup Language) adalah bahasa markup untuk menyusun struktur halaman web.</p>
+<h2>Pengertian HTML</h2>
+<p>
+HTML (HyperText Markup Language) adalah bahasa markup standar yang digunakan untuk
+membuat dan menyusun struktur halaman web. HTML bukanlah bahasa pemrograman,
+melainkan bahasa penanda (markup language) yang berfungsi untuk memberi struktur
+dan makna pada konten, seperti teks, gambar, tabel, formulir, serta elemen multimedia.
+</p>
 
-<h2>Struktur HTML</h2>
+<p>
+Setiap halaman website yang kita akses melalui browser pada dasarnya dibangun dari
+dokumen HTML. Browser akan membaca file HTML kemudian menampilkannya dalam bentuk
+visual kepada pengguna.
+</p>
+
+<h2>Struktur Dasar Dokumen HTML</h2>
+<p>Setiap dokumen HTML memiliki struktur dasar sebagai berikut:</p>
+
 <pre>
+&lt;!DOCTYPE html&gt;
 &lt;html&gt;
-  &lt;head&gt;&lt;/head&gt;
-  &lt;body&gt;&lt;/body&gt;
+&lt;head&gt;
+  &lt;title&gt;Judul Halaman&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  Konten Website
+&lt;/body&gt;
 &lt;/html&gt;
 </pre>
+
+<p>
+Tag <code>&lt;!DOCTYPE&gt;</code> digunakan untuk mendeklarasikan jenis dokumen HTML yang digunakan.
+Tag <code>&lt;html&gt;</code> merupakan elemen utama yang membungkus seluruh isi halaman.
+Tag <code>&lt;head&gt;</code> berisi informasi meta, sedangkan <code>&lt;body&gt;</code> berisi konten yang tampil di browser.
+</p>
+
+<h2>Elemen dan Tag HTML</h2>
+<p>
+HTML terdiri dari berbagai elemen yang ditulis menggunakan tag. Beberapa tag penting antara lain:
+</p>
+<ul>
+<li><b>&lt;h1&gt; – &lt;h6&gt;</b> : Digunakan untuk judul</li>
+<li><b>&lt;p&gt;</b> : Paragraf</li>
+<li><b>&lt;a&gt;</b> : Link</li>
+<li><b>&lt;img&gt;</b> : Gambar</li>
+<li><b>&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;</b> : Daftar</li>
+<li><b>&lt;table&gt;</b> : Tabel</li>
+<li><b>&lt;form&gt;</b> : Form input</li>
+</ul>
+
+<h2>Contoh Penggunaan Tag</h2>
+<pre>
+&lt;h1&gt;Website Pertama Saya&lt;/h1&gt;
+&lt;p&gt;Ini adalah paragraf pertama saya.&lt;/p&gt;
+&lt;a href="https://google.com"&gt;Kunjungi Google&lt;/a&gt;
+</pre>
+
+<h2>Manfaat Mempelajari HTML</h2>
+<ul>
+<li>Menjadi dasar dalam pengembangan website</li>
+<li>Memahami struktur dan kerangka web</li>
+<li>Mempermudah mempelajari CSS dan JavaScript</li>
+<li>Digunakan pada semua framework web</li>
+</ul>
+
+<h2>Kesimpulan</h2>
+<p>
+HTML merupakan pondasi utama dalam pengembangan web. Dengan memahami HTML, kita
+dapat membuat struktur halaman web yang rapi, terorganisir, dan siap dikembangkan
+lebih lanjut menggunakan CSS dan JavaScript.
+</p>
+
+<a class="download" href="pdf/p2-html.pdf" download>⬇ Download PDF</a>
+</div>
+
 
 <a class="btn" href="../pdf/p2.pdf" download>⬇ Download PDF</a>
 
@@ -47,3 +111,4 @@
 </div>
 </body>
 </html>
+
