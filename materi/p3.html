@@ -22,22 +22,92 @@
 <div class="content">
 <header><h1>Pertemuan 3 – CSS Dasar</h1></header>
 
-<main class="materi">
-<h2>Apa itu CSS?</h2>
-<p>CSS (Cascading Style Sheets) digunakan untuk mengatur tampilan dan layout halaman web.</p>
+<div class="card">
+
+<h2>Pendahuluan</h2>
+<p>
+Setelah memahami struktur dasar website menggunakan HTML, tahap selanjutnya dalam pengembangan
+web adalah memperindah tampilan halaman menggunakan CSS. Tanpa CSS, sebuah website hanya akan
+menampilkan teks dan elemen secara polos sehingga kurang menarik dan kurang nyaman digunakan.
+Oleh karena itu, CSS memiliki peran penting dalam menciptakan tampilan website yang profesional.
+</p>
+
+<h2>Pengertian CSS</h2>
+<p>
+CSS (Cascading Style Sheets) adalah bahasa stylesheet yang digunakan untuk mengatur tampilan dan
+layout elemen HTML. CSS memungkinkan pengembang untuk mengatur warna, ukuran, jarak, posisi,
+font, serta berbagai efek visual lainnya pada halaman web.
+</p>
+
+<h2>Fungsi dan Peran CSS</h2>
+<ul>
+<li>Mengatur warna latar belakang dan teks</li>
+<li>Mengatur ukuran dan jenis huruf</li>
+<li>Mengatur tata letak (layout) halaman</li>
+<li>Memberikan efek visual seperti bayangan, animasi, dan transisi</li>
+<li>Meningkatkan kenyamanan dan pengalaman pengguna</li>
+</ul>
+
+<h2>Cara Menyisipkan CSS</h2>
+<p>
+CSS dapat ditambahkan ke dalam dokumen HTML dengan tiga cara, yaitu:
+</p>
+<ul>
+<li><b>Inline CSS</b> – Langsung pada tag HTML</li>
+<li><b>Internal CSS</b> – Diletakkan di dalam tag &lt;style&gt;</li>
+<li><b>External CSS</b> – Menggunakan file .css terpisah</li>
+</ul>
 
 <h2>Contoh CSS</h2>
 <pre>
 body {
-  background: #f4f6f9;
+  background-color: #f4f6f9;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: #1f3c88;
 }
 </pre>
 
-<a class="btn" href="../pdf/p3.pdf" download>⬇ Download PDF</a>
+<h2>Konsep Selector</h2>
+<p>
+Selector adalah bagian CSS yang digunakan untuk memilih elemen HTML yang akan diberikan style.
+Beberapa selector yang sering digunakan:
+</p>
+<ul>
+<li>Selector tag (h1, p, div)</li>
+<li>Selector class (.card, .sidebar)</li>
+<li>Selector id (#header)</li>
+</ul>
 
-<div style="display:flex;justify-content:space-between;margin-top:40px">
-<a class="btn" href="p2.html">⬅ Sebelumnya</a>
-<a class="btn" href="p4.html">Selanjutnya ➡</a>
+<h2>Box Model CSS</h2>
+<p>
+Box Model adalah konsep dasar CSS yang menjelaskan bahwa setiap elemen HTML dianggap sebagai
+sebuah kotak yang terdiri dari margin, border, padding, dan content. Pemahaman box model sangat
+penting dalam mengatur jarak dan ukuran elemen pada halaman web.
+</p>
+
+<h2>Manfaat Mempelajari CSS</h2>
+<ul>
+<li>Membuat website lebih menarik dan profesional</li>
+<li>Meningkatkan user experience</li>
+<li>Mempermudah pengaturan layout</li>
+<li>Mendukung desain responsif</li>
+</ul>
+
+<h2>Kesimpulan</h2>
+<p>
+CSS merupakan komponen penting dalam pemrograman web yang berfungsi untuk mengatur tampilan
+dan layout halaman. Dengan memahami CSS, pengembang dapat menciptakan website yang lebih
+indah, nyaman, dan profesional.
+</p>
+
+<a class="download" href="pdf/p3-css.pdf" download>⬇ Download PDF</a>
+
+<div class="nav-btn">
+    <a href="p2.html">← Sebelumnya</a>
+    <a href="p4.html">Selanjutnya →</a>
 </div>
 </main>
 
@@ -46,3 +116,4 @@ body {
 </div>
 </body>
 </html>
+
