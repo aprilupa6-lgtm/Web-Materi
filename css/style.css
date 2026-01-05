@@ -1,140 +1,173 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:"Segoe UI", Arial, sans-serif;
+/* ===== GLOBAL STYLES ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
-body{
-    background:#f4f6f9;
+body {
+    background-color: #f4f7fa;
+    color: #333;
 }
 
 /* ===== SIDEBAR ===== */
-.sidebar{
-    position:fixed;
-    top:0;
-    left:0;
-    width:230px;
-    height:100vh;
-    background:#1f3c88;
-    color:white;
-    padding:20px;
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 240px; /* Sedikit lebih lebar */
+    height: 100vh;
+    background: #1f3c88;
+    color: white;
+    padding: 25px 15px;
+    z-index: 1000;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.1);
 }
 
-.sidebar h2{
-    text-align:center;
-    margin-bottom:20px;
+.sidebar h2 {
+    font-size: 1.4rem;
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    padding-bottom: 15px;
 }
 
-.sidebar a{
-    display:block;
-    color:white;
-    text-decoration:none;
-    padding:10px;
-    border-radius:6px;
-    margin-bottom:6px;
+.sidebar a {
+    display: block;
+    color: rgba(255,255,255,0.8);
+    text-decoration: none;
+    padding: 12px 15px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    transition: all 0.3s ease;
 }
 
-.sidebar a:hover,
-.sidebar .active{
-    background:#162d66;
+.sidebar a:hover {
+    background: rgba(255,255,255,0.1);
+    color: white;
+    transform: translateX(5px);
 }
 
-/* ===== MAIN ===== */
-.main{
-    margin-left:230px; /* PENTING */
-    padding:30px;
-    min-height:100vh;
+.sidebar a.active {
+    background: #4a90e2; /* Warna highlight untuk menu aktif */
+    color: white;
+    font-weight: bold;
 }
 
-/* ===== CARD ===== */
-.card{
-    background:white;
-    max-width:900px;
-    margin:30px auto;
-    padding:30px;
-    border-radius:14px;
-    box-shadow:0 5px 20px rgba(0,0,0,0.1);
-    line-height:1.8;
-    font-size:16px;
+/* ===== MAIN CONTENT ===== */
+.main {
+    margin-left: 240px; /* Harus sama dengan lebar sidebar agar tidak tertindih */
+    padding: 40px;
+    min-height: 100vh;
+    transition: margin 0.3s ease;
 }
 
-/* HEADINGS */
-.card h1{
-    margin-bottom:15px;
-}
-.card h2{
-    color:#1f3c88;
-    margin-top:25px;
-    margin-bottom:10px;
-    border-bottom:2px solid #1f3c88;
-    padding-bottom:5px;
+/* ===== CONTENT CARD ===== */
+.card {
+    background: white;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
 }
 
-/* TEXT */
-.card p{
-    text-align:justify;
-    margin-bottom:12px;
+.card h1 {
+    font-size: 2.2rem;
+    color: #1a1a1a;
+    margin-bottom: 20px;
 }
 
-/* LIST */
-.card ul{
-    margin-left:25px;
-    list-style:disc;
-    margin-bottom:15px;
+.card h2 {
+    color: #1f3c88;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    border-left: 5px solid #1f3c88; /* Variasi desain heading */
+    padding-left: 15px;
 }
 
-/* CODE */
-.card pre{
-    background:#111827;
-    color:#00ffae;
-    padding:15px;
-    border-radius:10px;
-    overflow-x:auto;
-    margin-bottom:15px;
+.card p {
+    line-height: 1.8;
+    margin-bottom: 15px;
+    text-align: justify;
 }
 
-/* BUTTON */
-.download{
-    display:inline-block;
-    background:#1f3c88;
-    color:white;
-    padding:10px 20px;
-    border-radius:8px;
-    text-decoration:none;
-    margin-top:15px;
-}
-.download:hover{background:#162d66;}
-
-.nav-btn{
-    margin-top:30px;
-    display:flex;
-    justify-content:space-between;
-}
-.nav-btn a{
-    background:#1f3c88;
-    color:white;
-    padding:10px 20px;
-    border-radius:8px;
-    text-decoration:none;
-}
-.nav-btn a:hover{background:#162d66;}
-
-/* FOOTER */
-footer{
-    text-align:center;
-    margin-top:40px;
-    color:#555;
+.card ul {
+    margin: 15px 0 15px 25px;
 }
 
-/* ===== MOBILE ===== */
-@media(max-width:768px){
-    .sidebar{
-        position:relative;
-        width:100%;
-        height:auto;
+.card li {
+    margin-bottom: 8px;
+}
+
+/* ===== CODE BLOCK ===== */
+.card pre {
+    background: #1e1e1e;
+    color: #9cdcfe;
+    padding: 20px;
+    border-radius: 12px;
+    overflow-x: auto;
+    font-family: 'Consolas', monospace;
+    font-size: 14px;
+    margin: 20px 0;
+    border-left: 4px solid #4a90e2;
+}
+
+/* ===== BUTTONS ===== */
+.download {
+    display: inline-block;
+    background: #28a745; /* Hijau agar kontras dengan sidebar biru */
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 20px;
+    transition: opacity 0.2s;
+}
+
+.download:hover {
+    background: #218838;
+}
+
+.nav-btn {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #eee;
+    padding-top: 30px;
+}
+
+.nav-btn a {
+    background: #1f3c88;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* ===== RESPONSIVE (MOBILE) ===== */
+@media (max-width: 768px) {
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: 15px;
     }
-    .main{
-        margin-left:0;
+    
+    .main {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+    
+    .sidebar a {
+        display: inline-block; /* Menu berjajar ke samping di mobile */
+        margin-right: 5px;
     }
 }
