@@ -1,4 +1,3 @@
-/* RESET */
 *{
     margin:0;
     padding:0;
@@ -6,23 +5,20 @@
     font-family:"Segoe UI", Arial, sans-serif;
 }
 
-/* BODY */
 body{
     background:#f4f6f9;
-    display:flex;
-    min-height:100vh;
 }
 
 /* ===== SIDEBAR ===== */
 .sidebar{
-    width:230px;
-    background:#1f3c88;
-    color:white;
-    padding:20px;
     position:fixed;
     top:0;
     left:0;
-    bottom:0;
+    width:230px;
+    height:100vh;
+    background:#1f3c88;
+    color:white;
+    padding:20px;
 }
 
 .sidebar h2{
@@ -35,8 +31,8 @@ body{
     color:white;
     text-decoration:none;
     padding:10px;
-    margin-bottom:5px;
     border-radius:6px;
+    margin-bottom:6px;
 }
 
 .sidebar a:hover,
@@ -44,23 +40,21 @@ body{
     background:#162d66;
 }
 
-/* ===== MAIN CONTENT ===== */
+/* ===== MAIN ===== */
 .main{
-    margin-left:230px;
-    width:100%;
+    margin-left:230px; /* PENTING */
     padding:30px;
+    min-height:100vh;
 }
 
 /* ===== CARD ===== */
 .card{
     background:white;
     max-width:900px;
-    margin:auto;
+    margin:30px auto;
     padding:30px;
     border-radius:14px;
     box-shadow:0 5px 20px rgba(0,0,0,0.1);
-
-    text-align:left;
     line-height:1.8;
     font-size:16px;
 }
@@ -76,9 +70,6 @@ body{
     border-bottom:2px solid #1f3c88;
     padding-bottom:5px;
 }
-.card h3{
-    margin-top:15px;
-}
 
 /* TEXT */
 .card p{
@@ -88,8 +79,8 @@ body{
 
 /* LIST */
 .card ul{
-    list-style:disc;
     margin-left:25px;
+    list-style:disc;
     margin-bottom:15px;
 }
 
@@ -103,7 +94,7 @@ body{
     margin-bottom:15px;
 }
 
-/* DOWNLOAD BUTTON */
+/* BUTTON */
 .download{
     display:inline-block;
     background:#1f3c88;
@@ -113,15 +104,12 @@ body{
     text-decoration:none;
     margin-top:15px;
 }
-.download:hover{
-    background:#162d66;
-}
+.download:hover{background:#162d66;}
 
-/* NEXT PREV */
 .nav-btn{
+    margin-top:30px;
     display:flex;
     justify-content:space-between;
-    margin-top:30px;
 }
 .nav-btn a{
     background:#1f3c88;
@@ -130,9 +118,7 @@ body{
     border-radius:8px;
     text-decoration:none;
 }
-.nav-btn a:hover{
-    background:#162d66;
-}
+.nav-btn a:hover{background:#162d66;}
 
 /* FOOTER */
 footer{
@@ -141,11 +127,8 @@ footer{
     color:#555;
 }
 
-/* RESPONSIVE */
+/* ===== MOBILE ===== */
 @media(max-width:768px){
-    body{
-        flex-direction:column;
-    }
     .sidebar{
         position:relative;
         width:100%;
