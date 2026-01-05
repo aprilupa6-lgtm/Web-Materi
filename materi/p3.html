@@ -2,39 +2,47 @@
 <html lang="id">
 <head>
 <meta charset="UTF-8">
-<title>Pertemuan 3 - CSS Dasar</title>
+<title>Pertemuan 3</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
-<header>
-<h1>Pertemuan 3 – CSS Dasar</h1>
-<nav>
+<div class="layout">
+<aside class="sidebar">
+<a href="p1.html">Pertemuan 1</a>
+<a href="p2.html">Pertemuan 2</a>
+<a href="p3.html">Pertemuan 3</a>
+<a href="p4.html">Pertemuan 4</a>
+<hr>
 <a href="../index.html">Home</a>
-<a href="../pertemuan.html">Daftar Pertemuan</a>
-</nav>
-</header>
+<a href="../pertemuan.html">Semua Pertemuan</a>
+</aside>
+
+<div class="content">
+<header><h1>Pertemuan 3 – CSS Dasar</h1></header>
 
 <main class="materi">
-<h2>Pengertian CSS</h2>
-<p>CSS digunakan untuk mengatur tampilan halaman web.</p>
+<h2>Apa itu CSS?</h2>
+<p>CSS (Cascading Style Sheets) digunakan untuk mengatur tampilan dan layout halaman web.</p>
 
-<h2>Cara Menulis CSS</h2>
-<ul>
-<li>Inline</li>
-<li>Internal</li>
-<li>External</li>
-</ul>
-
-<h2>Contoh</h2>
+<h2>Contoh CSS</h2>
 <pre>
 body {
   background: #f4f6f9;
 }
 </pre>
+
+<a class="btn" href="../pdf/p3.pdf" download>⬇ Download PDF</a>
+
+<div style="display:flex;justify-content:space-between;margin-top:40px">
+<a class="btn" href="p2.html">⬅ Sebelumnya</a>
+<a class="btn" href="p4.html">Selanjutnya ➡</a>
+</div>
 </main>
 
 <footer>© 2026 Pemrograman Web</footer>
+</div>
+</div>
 </body>
 </html>
